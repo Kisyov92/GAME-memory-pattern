@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  font-size: 1.6rem;
+}
+
+.game-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffd9ae;
+  position: relative;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+/*************************************/
+/* stats */
+/*************************************/
+
+.stats {
+  font-size: 3rem;
+  line-height: 1.5;
+
+  display: flex;
+  gap: 5rem;
+}
+
+/*************************************/
+/* intro */
+/*************************************/
+
+.expl {
+  width: max-content;
+
+  border: 3px solid #333;
+  padding: 3rem;
+  text-align: center;
+}
+
+.msg-heading {
+  font-weight: 600;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.rules {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  margin-bottom: 5rem;
+}
+
+.choose-mode p {
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+
+.mode {
+  font-size: 3rem;
+  color: #333;
+  background-color: #ecb390;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.mode {
+  background-color: #eebb9b;
+}
+
+/*************************************/
+/* game */
+/*************************************/
+
+.game {
+  width: 50rem;
+  height: 50rem;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: #fff;
+  border: 5px solid #333;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.game-btn {
+  width: 50%;
+  height: 50%;
+  flex-shrink: 1;
+}
+
+.green-color {
+  background-color: #69db7c;
+}
+.red-color {
+  background-color: #c51605;
+}
+.yellow-color {
+  background-color: #ffd460;
+}
+.blue-color {
+  background-color: #337ccf;
+}
+
+.v-border {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background-color: #333;
+}
+.h-border {
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: #333;
+}
+
+.btn {
+  font-size: 3rem;
+  padding: 1rem;
+  background-color: #ecb390;
+  cursor: pointer;
+  border: 2px solid #333;
+
+  user-select: none;
+}
+
+.btn:hover {
+  background-color: #eebb9b;
+}
+
+.btn-next-level {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+/*************************************/
+/* reusable */
+/*************************************/
+
+.hide {
+  display: none;
+}
+
+.light-up {
+  opacity: 0.5;
+}

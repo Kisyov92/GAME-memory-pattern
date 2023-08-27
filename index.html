@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kisi - memory test</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <section class="game-container">
+      <div class="stats">
+        <p class="level">Level: <span class="lvl">0</span></p>
+        <p class="max-level">Max Level: <span class="max-lvl">0</span></p>
+        <p class="game-mode">Mode: <span class="mode-option"></span></p>
+      </div>
+      <div class="game hide">
+        <div class="game-btn green-color" data-id="1"></div>
+        <div class="game-btn red-color" data-id="2"></div>
+        <div class="game-btn yellow-color" data-id="3"></div>
+        <div class="game-btn blue-color" data-id="4"></div>
+        <button class="btn btn-next-level hide">START NEXT LEVEL</button>
+        <div class="v-border"></div>
+        <div class="h-border"></div>
+      </div>
+      <button class="btn show-pattern hide">SHOW PATTERN</button>
+      <div class="expl">
+        <h2 class="msg-heading">TEST YOUR MOMORY</h2>
+        <p class="rules">
+          The rules of the game are simple. <br />
+          A pattern is shown and you have to repeat it. <br />
+          There are two modes to choose from - hard and easy. <br />
+          On easy mode the whole pattern is shown at the beginning of every
+          level. <br />
+          On hard mode you won't see the whole pattern. Only what is added to
+          it.
+        </p>
+        <div class="choose-mode">
+          <p>Choose game mode to start</p>
+          <button class="mode" data-mode="easy">EASY</button>
+          <button class="mode" data-mode="hard">HARD</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
