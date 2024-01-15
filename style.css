@@ -48,7 +48,7 @@ body {
 /*************************************/
 
 .expl {
-  width: max-content;
+  max-width: max-content;
 
   border: 3px solid #333;
   padding: 3rem;
@@ -171,4 +171,39 @@ body {
 
 .light-up {
   opacity: 0.5;
+}
+
+@media (max-width: 48em) {
+  .expl,
+  .msg-heading,
+  .choose-mode {
+    padding: 2rem;
+  }
+
+  .rules,
+  .mode {
+    font-size: 1.8rem;
+  }
+
+  .stats {
+    font-size: 2rem;
+  }
+  .game {
+    width: 30rem;
+    height: 30rem;
+  }
+  .btn {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
+@media (max-width: 30em) {
+  .stats {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .game {
+    width: 30rem;
+    height: 30rem;
+  }
 }
